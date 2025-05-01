@@ -36,7 +36,7 @@ export function MusicalNotes() {
     }
   }, [])
 
-  useEffect(() => { return
+  useEffect(() => {
     if (!isActive) return
 
     const noteSymbols = ["♩", "♪", "♫", "♬", "𝄞"]
