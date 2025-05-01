@@ -43,50 +43,26 @@ export default function PricingPage() {
           </div>
         </section>
 
-        {/* Pricing Cards */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
+          {/* Pricing Cards */}
+          <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
               {/* Free Plan */}
-              <div className="flex flex-col overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md">
+              <div className="flex flex-col overflow-hidden rounded-lg border bg-white shadow-sm">
                 <div className="flex flex-col items-center justify-center space-y-2 border-b bg-gray-50 p-6">
                   <h3 className="text-xl font-bold">Free</h3>
                   <div className="text-center">
                     <span className="text-3xl font-bold">$0</span>
                     <span className="text-sm text-gray-500">/month</span>
                   </div>
-                  <p className="text-center text-sm text-gray-500">Perfect for beginners</p>
+                  <p className="text-center text-sm text-gray-500">For beginners</p>
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-6">
                   <ul className="space-y-2">
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">5 songs per month</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Basic tab generation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Standard instrument separation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Export as plain text</span>
-                    </li>
-                    <li className="flex items-center">
-                      <X className="mr-2 h-4 w-4 text-gray-300" />
-                      <span className="text-sm text-gray-500">Advanced editing tools</span>
-                    </li>
-                    <li className="flex items-center">
-                      <X className="mr-2 h-4 w-4 text-gray-300" />
-                      <span className="text-sm text-gray-500">Tab recording</span>
-                    </li>
-                    <li className="flex items-center">
-                      <X className="mr-2 h-4 w-4 text-gray-300" />
-                      <span className="text-sm text-gray-500">Priority support</span>
-                    </li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />2 songs/day, 5/week</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Tab generation</li>
+                    <li><X className="mr-2 h-4 w-4 text-gray-500" />Ads included</li>
+                    <li><X className="mr-2 h-4 w-4 text-gray-500" />Premium features</li>
                   </ul>
                   <Button className="mt-6 w-full bg-gray-200 text-gray-800 hover:bg-gray-300">
                     Get Started
@@ -96,7 +72,7 @@ export default function PricingPage() {
               </div>
 
               {/* Basic Plan */}
-              <div className="flex flex-col overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md">
+              <div className="flex flex-col overflow-hidden rounded-lg border bg-white shadow-sm">
                 <div className="flex flex-col items-center justify-center space-y-2 border-b bg-[#f6f2d0] p-6">
                   <h3 className="text-xl font-bold">Basic</h3>
                   <div className="text-center">
@@ -107,135 +83,63 @@ export default function PricingPage() {
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-6">
                   <ul className="space-y-2">
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">20 songs per month</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Enhanced tab generation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Improved instrument separation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Export as PDF and text</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Basic editing tools</span>
-                    </li>
-                    <li className="flex items-center">
-                      <X className="mr-2 h-4 w-4 text-gray-300" />
-                      <span className="text-sm text-gray-500">Tab recording</span>
-                    </li>
-                    <li className="flex items-center">
-                      <X className="mr-2 h-4 w-4 text-gray-300" />
-                      <span className="text-sm text-gray-500">Priority support</span>
-                    </li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />5 songs/day, 20/week</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Tab generation</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />No ads</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Premium features</li>
                   </ul>
-                  <Button className="mt-6 w-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 hover:opacity-90 transition-opacity">
+                  <Button className="mt-6 w-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 hover:opacity-90">
                     Subscribe
                   </Button>
                 </div>
               </div>
 
-              {/* Pro Plan - Highlighted */}
-              <div className="flex flex-col overflow-hidden rounded-lg border-2 border-[#FFD700] bg-white shadow-md transition-all hover:shadow-lg relative">
-                <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 transform">
+              {/* Limitless Plan */}
+              <div className="flex flex-col overflow-hidden rounded-lg border-2 border-[#FFD700] bg-white shadow-md relative">
+                <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4">
                   <div className="bg-gradient-to-r from-[#FFD700] to-amber-500 px-3 py-1 text-xs font-bold text-black rounded-full">
                     POPULAR
                   </div>
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-2 border-b bg-gradient-to-r from-[#FFD700]/20 to-amber-500/20 p-6">
-                  <h3 className="text-xl font-bold">Pro</h3>
+                  <h3 className="text-xl font-bold">Limitless</h3>
                   <div className="text-center">
-                    <span className="text-3xl font-bold">$19.99</span>
+                    <span className="text-3xl font-bold">$15.99</span>
                     <span className="text-sm text-gray-500">/month</span>
                   </div>
-                  <p className="text-center text-sm text-gray-500">For serious musicians</p>
+                  <p className="text-center text-sm text-gray-500">For advanced musicians</p>
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-6">
                   <ul className="space-y-2">
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Unlimited songs</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Advanced tab generation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">High-quality instrument separation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Export in all formats</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Full Tabs Studio access</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Tab recording</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Email support</span>
-                    </li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Unlimited songs</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Tab generation</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />No ads</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Premium features</li>
                   </ul>
-                  <Button className="mt-6 w-full bg-gradient-to-r from-[#FFD700] to-amber-500 text-black hover:opacity-90 transition-opacity">
+                  <Button className="mt-6 w-full bg-gradient-to-r from-[#FFD700] to-amber-500 text-black hover:opacity-90">
                     Subscribe
                   </Button>
                 </div>
               </div>
 
-              {/* Enterprise Plan */}
-              <div className="flex flex-col overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md">
+              {/* Band Plan */}
+              <div className="flex flex-col overflow-hidden rounded-lg border bg-white shadow-sm">
                 <div className="flex flex-col items-center justify-center space-y-2 border-b bg-gradient-to-r from-indigo-950/10 to-purple-900/10 p-6">
-                  <h3 className="text-xl font-bold">Enterprise</h3>
+                  <h3 className="text-xl font-bold">Band</h3>
                   <div className="text-center">
                     <span className="text-3xl font-bold">$49.99</span>
                     <span className="text-sm text-gray-500">/month</span>
                   </div>
-                  <p className="text-center text-sm text-gray-500">For schools & studios</p>
+                  <p className="text-center text-sm text-gray-500">For bands or schools</p>
                 </div>
                 <div className="flex flex-1 flex-col justify-between p-6">
                   <ul className="space-y-2">
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Unlimited songs</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Premium tab generation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Studio-quality instrument separation</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Export in all formats</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Full Tabs Studio access</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Multi-user collaboration</span>
-                    </li>
-                    <li className="flex items-center">
-                      <Check className="mr-2 h-4 w-4 text-green-500" />
-                      <span className="text-sm">Priority phone & email support</span>
-                    </li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Unlimited songs (6 users)</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Tab generation</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />No ads</li>
+                    <li><Check className="mr-2 h-4 w-4 text-green-500" />Premium features</li>
                   </ul>
-                  <Button className="mt-6 w-full bg-gradient-to-r from-indigo-950 to-purple-900 hover:opacity-90 transition-opacity">
+                  <Button className="mt-6 w-full bg-gradient-to-r from-indigo-950 to-purple-900 hover:opacity-90">
                     Contact Sales
                   </Button>
                 </div>
@@ -246,132 +150,92 @@ export default function PricingPage() {
 
         {/* Feature Comparison */}
         <section className="w-full py-12 md:py-24 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Feature Comparison</h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Compare all features across our different plans
-                </p>
-              </div>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b">
-                    <th className="py-4 px-6 text-left font-medium">Feature</th>
-                    <th className="py-4 px-6 text-center font-medium">Free</th>
-                    <th className="py-4 px-6 text-center font-medium">Basic</th>
-                    <th className="py-4 px-6 text-center font-medium bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      Pro
-                    </th>
-                    <th className="py-4 px-6 text-center font-medium">Enterprise</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Songs per month</td>
-                    <td className="py-4 px-6 text-center">5</td>
-                    <td className="py-4 px-6 text-center">20</td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      Unlimited
-                    </td>
-                    <td className="py-4 px-6 text-center">Unlimited</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Song duration limit</td>
-                    <td className="py-4 px-6 text-center">5 minutes</td>
-                    <td className="py-4 px-6 text-center">10 minutes</td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      20 minutes
-                    </td>
-                    <td className="py-4 px-6 text-center">Unlimited</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Instrument separation quality</td>
-                    <td className="py-4 px-6 text-center">Standard</td>
-                    <td className="py-4 px-6 text-center">Improved</td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">High</td>
-                    <td className="py-4 px-6 text-center">Studio</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Tab editing</td>
-                    <td className="py-4 px-6 text-center">Basic</td>
-                    <td className="py-4 px-6 text-center">Standard</td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      Advanced
-                    </td>
-                    <td className="py-4 px-6 text-center">Premium</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Export formats</td>
-                    <td className="py-4 px-6 text-center">Text</td>
-                    <td className="py-4 px-6 text-center">Text, PDF</td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      Text, PDF, GP, MIDI
-                    </td>
-                    <td className="py-4 px-6 text-center">All formats</td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Tab recording</td>
-                    <td className="py-4 px-6 text-center">
-                      <X className="mx-auto h-5 w-5 text-gray-300" />
-                    </td>
-                    <td className="py-4 px-6 text-center">
-                      <X className="mx-auto h-5 w-5 text-gray-300" />
-                    </td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      <Check className="mx-auto h-5 w-5 text-green-500" />
-                    </td>
-                    <td className="py-4 px-6 text-center">
-                      <Check className="mx-auto h-5 w-5 text-green-500" />
-                    </td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Collaboration</td>
-                    <td className="py-4 px-6 text-center">
-                      <X className="mx-auto h-5 w-5 text-gray-300" />
-                    </td>
-                    <td className="py-4 px-6 text-center">
-                      <X className="mx-auto h-5 w-5 text-gray-300" />
-                    </td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      <Check className="mx-auto h-5 w-5 text-green-500" />
-                    </td>
-                    <td className="py-4 px-6 text-center">
-                      <Check className="mx-auto h-5 w-5 text-green-500" />
-                    </td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Multi-user accounts</td>
-                    <td className="py-4 px-6 text-center">
-                      <X className="mx-auto h-5 w-5 text-gray-300" />
-                    </td>
-                    <td className="py-4 px-6 text-center">
-                      <X className="mx-auto h-5 w-5 text-gray-300" />
-                    </td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      <X className="mx-auto h-5 w-5 text-gray-300" />
-                    </td>
-                    <td className="py-4 px-6 text-center">
-                      <Check className="mx-auto h-5 w-5 text-green-500" />
-                    </td>
-                  </tr>
-                  <tr className="border-b">
-                    <td className="py-4 px-6 font-medium">Support</td>
-                    <td className="py-4 px-6 text-center">Community</td>
-                    <td className="py-4 px-6 text-center">Email</td>
-                    <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
-                      Priority Email
-                    </td>
-                    <td className="py-4 px-6 text-center">Phone & Email</td>
-                  </tr>
-                </tbody>
-              </table>
+        <div className="container px-4 md:px-6">
+          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Feature Comparison</h2>
+              <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed">
+                Compare all features across our different plans
+              </p>
             </div>
           </div>
-        </section>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="border-b">
+                  <th className="py-4 px-6 text-left font-medium">Feature</th>
+                  <th className="py-4 px-6 text-center font-medium">Free</th>
+                  <th className="py-4 px-6 text-center font-medium">Basic</th>
+                  <th className="py-4 px-6 text-center font-medium bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
+                    Limitless
+                  </th>
+                  <th className="py-4 px-6 text-center font-medium">Band</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b">
+                  <td className="py-4 px-6 font-medium">Songs allowed</td>
+                  <td className="py-4 px-6 text-center">2/day, 5/week</td>
+                  <td className="py-4 px-6 text-center">5/day, 20/week</td>
+                  <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">Unlimited</td>
+                  <td className="py-4 px-6 text-center">Unlimited</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-4 px-6 font-medium">Ads</td>
+                  <td className="py-4 px-6 text-center">Yes</td>
+                  <td className="py-4 px-6 text-center">No</td>
+                  <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">No</td>
+                  <td className="py-4 px-6 text-center">No</td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-4 px-6 font-medium">Premium features</td>
+                  <td className="py-4 px-6 text-center">
+                    <X className="mx-auto h-5 w-5 text-gray-300" />
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <Check className="mx-auto h-5 w-5 text-green-500" />
+                  </td>
+                  <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
+                    <Check className="mx-auto h-5 w-5 text-green-500" />
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <Check className="mx-auto h-5 w-5 text-green-500" />
+                  </td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-4 px-6 font-medium">Tab recording & studio</td>
+                  <td className="py-4 px-6 text-center">
+                    <X className="mx-auto h-5 w-5 text-gray-300" />
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <Check className="mx-auto h-5 w-5 text-green-500" />
+                  </td>
+                  <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
+                    <Check className="mx-auto h-5 w-5 text-green-500" />
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <Check className="mx-auto h-5 w-5 text-green-500" />
+                  </td>
+                </tr>
+                <tr className="border-b">
+                  <td className="py-4 px-6 font-medium">Multi-user accounts</td>
+                  <td className="py-4 px-6 text-center">
+                    <X className="mx-auto h-5 w-5 text-gray-300" />
+                  </td>
+                  <td className="py-4 px-6 text-center">
+                    <X className="mx-auto h-5 w-5 text-gray-300" />
+                  </td>
+                  <td className="py-4 px-6 text-center bg-gradient-to-r from-[#FFD700]/10 to-amber-500/10">
+                    <X className="mx-auto h-5 w-5 text-gray-300" />
+                  </td>
+                  <td className="py-4 px-6 text-center">Up to 6 users</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
         {/* FAQ Section */}
         <section className="w-full py-12 md:py-24">

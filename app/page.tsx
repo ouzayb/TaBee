@@ -30,17 +30,7 @@ export default function Home() {
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="#features" className="text-sm font-medium transition-colors hover:text-primary relative group">
-              Features
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
-            </Link>
-            <Link
-              href="#how-it-works"
-              className="text-sm font-medium transition-colors hover:text-primary relative group"
-            >
-              How It Works
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
-            </Link>
+          
             <Link href="/timeline" className="text-sm font-medium transition-colors hover:text-primary relative group">
               Timeline
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
@@ -68,20 +58,6 @@ export default function Home() {
         {isMenuOpen && (
           <div className="md:hidden border-t py-4 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <nav className="container flex flex-col space-y-4">
-              <Link
-                href="#features"
-                className="text-sm font-medium transition-colors hover:text-primary px-2 py-1.5 rounded-md hover:bg-gray-100"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Features
-              </Link>
-              <Link
-                href="#how-it-works"
-                className="text-sm font-medium transition-colors hover:text-primary px-2 py-1.5 rounded-md hover:bg-gray-100"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                How It Works
-              </Link>
               <Link
                 href="/timeline"
                 className="text-sm font-medium transition-colors hover:text-primary px-2 py-1.5 rounded-md hover:bg-gray-100"
@@ -112,7 +88,7 @@ export default function Home() {
         )}
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-950 to-purple-900 text-white">
+          <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-indigo-950 to-purple-900 text-white">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
@@ -121,8 +97,9 @@ export default function Home() {
                     Turn Music into Tabs with TaBee
                   </h1>
                   <p className="max-w-[600px] text-gray-200 md:text-xl">
-                    TaBee uses AI to convert your music files into guitar tabs. Separate instruments, identify notes,
-                    and practice with our tabs studio.
+                    TaBee uses AI to convert music files into tabs for multiple instruments. Identify notes, separate instruments,
+                    practice with our studio features, and create accurate tabs in seconds. Whether you're a beginner or a pro,
+                    TaBee makes it easy to learn and practice.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -139,40 +116,15 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="relative h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]">
+                <div className="relative h-[350px] w-[350px] md:h-[350px] md:w-[350px] lg:h-[350px] lg:w-[350px]">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative h-[300px] w-[300px] md:h-[350px] md:w-[350px] lg:h-[450px] lg:w-[450px] bg-gradient-to-br from-[#f6f2d0] to-[#fffae0] rounded-full flex items-center justify-center overflow-hidden">
-                      <div className="absolute h-[200px] w-[200px] md:h-[250px] md:w-[250px] lg:h-[350px] lg:w-[350px]">
-                        <div className="relative h-full w-full">
-                          {/* Bee body */}
-                          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-32 w-40 bg-gradient-to-b from-[#FFD700] to-amber-500 rounded-full"></div>
-                          {/* Bee stripes */}
-                          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-32 w-40">
-                            <div className="absolute top-1/4 h-2 w-full bg-black"></div>
-                            <div className="absolute top-2/4 h-2 w-full bg-black"></div>
-                            <div className="absolute top-3/4 h-2 w-full bg-black"></div>
-                          </div>
-                          {/* Bee wings */}
-                          <div className="absolute top-1/3 left-1/4 h-12 w-16 bg-white opacity-70 rounded-full transform -rotate-45"></div>
-                          <div className="absolute top-1/3 right-1/4 h-12 w-16 bg-white opacity-70 rounded-full transform rotate-45"></div>
-                          {/* Bee eyes */}
-                          <div className="absolute top-[40%] left-[35%] h-3 w-3 bg-black rounded-full"></div>
-                          <div className="absolute top-[40%] right-[35%] h-3 w-3 bg-black rounded-full"></div>
-                          {/* Bee smile */}
-                          <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 w-10 h-5 border-b-2 border-black rounded-b-full"></div>
-                          {/* Guitar */}
-                          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 rotate-45">
-                            <div className="h-40 w-3 bg-[#8B4513]"></div>
-                            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-20 w-16 bg-gradient-to-r from-[#aa8bf8] to-purple-700 rounded-b-full"></div>
-                            {/* Guitar strings */}
-                            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 h-20 w-12">
-                              <div className="h-full w-[1px] bg-white absolute left-1/4"></div>
-                              <div className="h-full w-[1px] bg-white absolute left-2/4"></div>
-                              <div className="h-full w-[1px] bg-white absolute left-3/4"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div className="relative h-[350px] w-[350px] md:h-[350px] md:w-[350px] lg:h-[350px] lg:w-[350px] bg-gradient-to-br from-[#f6f2d0] to-[#fffae0] rounded-full flex items-center justify-center overflow-hidden">
+                      <Image
+                        src="app/page-logo.jpg"
+                        alt="TaBee Logo"
+                        fill
+                        className="object-contain"
+                      />
                     </div>
                   </div>
                 </div>
@@ -181,73 +133,71 @@ export default function Home() {
           </div>
         </section>
 
-        {/* App Screenshots Section */}
-        <section className="w-full py-12 md:py-24 bg-white">
+        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">See TaBee in Action</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How TaBee Works</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Transform your music experience with our intuitive interface
+                  Our AI-powered process makes creating guitar tabs from music files simple and accurate.
                 </p>
               </div>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* App Screenshot 1 */}
-              <div className="rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-                <div className="relative h-[500px] w-full bg-gray-100 flex items-center justify-center">
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 mt-12">
+              <div className="flex flex-col items-center space-y-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 text-white">
+                  <FileMusic className="h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-bold">1. Upload Music</h3>
+                <p className="text-sm text-gray-500 text-center">
+                  Upload any song you want to TaBee. Our system accepts most audio formats including MP3, WAV, and FLAC.
+                </p>
+                <div className="relative w-full h-[500px] mt-2 rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=500&width=300"
-                    alt="TaBee App - Instrument Separation"
+                    src="/app/generation.png"
+                    alt="Upload Music Interface"
                     width={300}
                     height={500}
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center p-4 bg-black/50 rounded-lg text-white">
-                      <p className="font-bold">Instrument Separation Screen</p>
-                      <p className="text-sm">Isolate guitar parts from any song</p>
-                    </div>
-                  </div>
                 </div>
               </div>
-
-              {/* App Screenshot 2 */}
-              <div className="rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-                <div className="relative h-[500px] w-full bg-gray-100 flex items-center justify-center">
+              <div className="flex flex-col items-center space-y-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 text-white">
+                  <Layers className="h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-bold">2. AI Processing</h3>
+                <p className="text-sm text-gray-500 text-center">
+                  Our AI separates instruments, identifies notes and chords, and converts them into accurate instrument
+                  tabs.
+                </p>
+                <div className="relative w-full h-[500px] mt-2 rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=500&width=300"
-                    alt="TaBee App - Tab Generation"
+                    src="/app/tabs.png"
+                    alt="AI Processing Visualization"
                     width={300}
                     height={500}
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center p-4 bg-black/50 rounded-lg text-white">
-                      <p className="font-bold">Tab Generation Screen</p>
-                      <p className="text-sm">AI-powered tab creation</p>
-                    </div>
-                  </div>
                 </div>
               </div>
-
-              {/* App Screenshot 3 */}
-              <div className="rounded-xl overflow-hidden shadow-lg transition-transform hover:scale-105">
-                <div className="relative h-[500px] w-full bg-gray-100 flex items-center justify-center">
+              <div className="flex flex-col items-center space-y-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 text-white">
+                  <Guitar className="h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-bold">3. Practice & Perfect</h3>
+                <p className="text-sm text-gray-500 text-center">
+                  Use the Tabs Studio to practice, edit, and perfect your tabs. Save and share them with other
+                  musicians.
+                </p>
+                <div className="relative w-full h-[500px] mt-2 rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=500&width=300"
-                    alt="TaBee App - Tabs Studio"
+                    src="/app/studio.png"
+                    alt="Tabs Studio Interface"
                     width={300}
                     height={500}
                     className="object-cover"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center p-4 bg-black/50 rounded-lg text-white">
-                      <p className="font-bold">Tabs Studio Screen</p>
-                      <p className="text-sm">Practice and perfect your tabs</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -260,8 +210,7 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Powerful Features</h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  TaBee offers a comprehensive suite of tools to help musicians create, practice, and perfect their
-                  guitar tabs.
+                  TaBee offers a comprehensive suite of tools to help musicians get acurate tabs and practice them.
                 </p>
               </div>
             </div>
@@ -272,16 +221,16 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Instrument Separation</h3>
                 <p className="text-sm text-gray-500 text-center">
-                  Isolate individual instruments from any music file with our advanced AI technology.
+                  Isolate individual instruments from any music file with advanced AI technology.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 shadow-sm bg-white hover:shadow-md transition-shadow">
                 <div className="rounded-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 p-3">
                   <Music className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">Note Detection</h3>
+                <h3 className="text-xl font-bold">Chord Detection</h3>
                 <p className="text-sm text-gray-500 text-center">
-                  Accurately identify notes and chords played in your music with precision.
+                  Accurately and easily identify chords played in your music.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 shadow-sm bg-white hover:shadow-md transition-shadow">
@@ -290,7 +239,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Tab Generation</h3>
                 <p className="text-sm text-gray-500 text-center">
-                  Convert detected notes into easy-to-read guitar tabs automatically.
+                  Convert detected notes into easy-to-read instrument tabs automatically.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 shadow-sm bg-white hover:shadow-md transition-shadow">
@@ -299,7 +248,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Tab Recording</h3>
                 <p className="text-sm text-gray-500 text-center">
-                  Record your guitar playing and instantly convert it to tabs for future reference.
+                  Record your instrument while playing and instantly convert it to tabs.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg border border-gray-200 p-6 shadow-sm bg-white hover:shadow-md transition-shadow">
@@ -317,7 +266,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold">Multi-Instrument Support</h3>
                 <p className="text-sm text-gray-500 text-center">
-                  Starting with guitar, with plans to expand to other string instruments soon.
+                  Starting with string instruments, we plan to expand to other instrument types soon.
                 </p>
               </div>
             </div>
@@ -342,7 +291,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="relative h-16 w-16 mr-4 overflow-hidden rounded-full">
                     <Image
-                      src="/placeholder.svg?height=64&width=64"
+                      src="/app/logo.jpg"
                       alt="User Avatar"
                       width={64}
                       height={64}
@@ -368,7 +317,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="relative h-16 w-16 mr-4 overflow-hidden rounded-full">
                     <Image
-                      src="/placeholder.svg?height=64&width=64"
+                      src="/app/logo.jpg"
                       alt="User Avatar"
                       width={64}
                       height={64}
@@ -394,7 +343,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <div className="relative h-16 w-16 mr-4 overflow-hidden rounded-full">
                     <Image
-                      src="/placeholder.svg?height=64&width=64"
+                      src="/app/logo.jpg"
                       alt="User Avatar"
                       width={64}
                       height={64}
@@ -418,77 +367,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">How TaBee Works</h2>
-                <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our AI-powered process makes creating guitar tabs from music files simple and accurate.
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 mt-12">
-              <div className="flex flex-col items-center space-y-4">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 text-white">
-                  <FileMusic className="h-8 w-8" />
-                </div>
-                <h3 className="text-xl font-bold">1. Upload Music</h3>
-                <p className="text-sm text-gray-500 text-center">
-                  Upload any music file to TaBee. Our system accepts most audio formats including MP3, WAV, and FLAC.
-                </p>
-                <div className="relative w-full h-48 mt-2 rounded-lg overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=192&width=300"
-                    alt="Upload Music Interface"
-                    width={300}
-                    height={192}
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 text-white">
-                  <Layers className="h-8 w-8" />
-                </div>
-                <h3 className="text-xl font-bold">2. AI Processing</h3>
-                <p className="text-sm text-gray-500 text-center">
-                  Our AI separates instruments, identifies notes and chords, and converts them into accurate guitar
-                  tabs.
-                </p>
-                <div className="relative w-full h-48 mt-2 rounded-lg overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=192&width=300"
-                    alt="AI Processing Visualization"
-                    width={300}
-                    height={192}
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-[#aa8bf8] to-purple-700 text-white">
-                  <Guitar className="h-8 w-8" />
-                </div>
-                <h3 className="text-xl font-bold">3. Practice & Perfect</h3>
-                <p className="text-sm text-gray-500 text-center">
-                  Use our Tabs Studio to practice, edit, and perfect your tabs. Save and share them with other
-                  musicians.
-                </p>
-                <div className="relative w-full h-48 mt-2 rounded-lg overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=192&width=300"
-                    alt="Tabs Studio Interface"
-                    width={300}
-                    height={192}
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Real-world Usage Section */}
         <section className="w-full py-12 md:py-24 bg-gradient-to-b from-white to-gray-50">
           <div className="container px-4 md:px-6">
@@ -506,7 +384,7 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md">
                 <div className="relative h-64 w-full">
                   <Image
-                    src="/placeholder.svg?height=256&width=500"
+                    src="/real-world/home.jpg"
                     alt="Musician using TaBee at home"
                     width={500}
                     height={256}
@@ -516,7 +394,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Home Practice Sessions</h3>
                   <p className="text-gray-600">
-                    Musicians use TaBee to learn new songs at their own pace, with the ability to slow down difficult
+                    Musicians can use TaBee to learn new songs at their own pace, with the ability to slow down, or loop
                     sections and focus on specific parts of a song.
                   </p>
                 </div>
@@ -526,7 +404,7 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md">
                 <div className="relative h-64 w-full">
                   <Image
-                    src="/placeholder.svg?height=256&width=500"
+                    src="/real-world/studio.jpg"
                     alt="Band using TaBee in studio"
                     width={500}
                     height={256}
@@ -536,7 +414,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Studio Collaboration</h3>
                   <p className="text-gray-600">
-                    Bands and recording artists use TaBee to quickly document and share musical ideas during songwriting
+                    Bands and recording artists can use TaBee to quickly document and share musical ideas during songwriting
                     and recording sessions.
                   </p>
                 </div>
@@ -546,7 +424,7 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md">
                 <div className="relative h-64 w-full">
                   <Image
-                    src="/placeholder.svg?height=256&width=500"
+                    src="/real-world/lesson.jpg"
                     alt="Teacher using TaBee with student"
                     width={500}
                     height={256}
@@ -556,7 +434,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Music Education</h3>
                   <p className="text-gray-600">
-                    Teachers use TaBee to create custom learning materials for students, making lessons more engaging
+                    Music Teachers can use TaBee to create custom learning materials for students, making lessons more engaging
                     and personalized.
                   </p>
                 </div>
@@ -566,7 +444,7 @@ export default function Home() {
               <div className="bg-white rounded-xl overflow-hidden shadow-md">
                 <div className="relative h-64 w-full">
                   <Image
-                    src="/placeholder.svg?height=256&width=500"
+                    src="/real-world/live.jpg"
                     alt="Musician performing with TaBee"
                     width={500}
                     height={256}
@@ -576,7 +454,7 @@ export default function Home() {
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Live Performance</h3>
                   <p className="text-gray-600">
-                    Performers use TaBee to quickly learn cover songs and create setlists with accurate tabs for
+                    Performers/Bands can use TaBee to quickly learn cover songs and create setlists with accurate tabs for
                     rehearsals and live shows.
                   </p>
                 </div>
