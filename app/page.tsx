@@ -482,10 +482,13 @@ export default function Home() {
                   Download Now
                   <Download className="ml-2 h-4 w-4" />
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-black bg-white hover:bg-white/90">
-                  Watch Demo
-                  <Play className="ml-2 h-4 w-4" />
-                </Button>
+                <a href="https://www.youtube.com/watch?v=JLGuk6-0eJo" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" variant="outline" className="border-white text-black bg-white hover:bg-white/90">
+                    Watch Demo
+                    <Play className="ml-2 h-4 w-4"/>
+                  </Button>
+                </a>
+
               </div>
             </div>
           </div>
