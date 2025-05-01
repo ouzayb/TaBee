@@ -160,14 +160,13 @@ export default function TeamPage() {
             {/* Team Photo */}
             <div className="mt-16 text-center">
               <h3 className="text-2xl font-bold mb-6">Our Team at Work</h3>
-              <div className="relative w-full h-[500px] rounded-xl overflow-hidden shadow-lg mb-8">
-                <Image
-                  src="/real-world/team.jpg"
-                  alt="TaBee Team Working Together"
-                  width={1200}
-                  height={500}
-                  className="object-cover w-full h-full"
-                />
+              <div className="relative w-full h-[300px] sm:h-[400px] md:h-[700px] rounded-xl overflow-hidden shadow-lg mb-8">
+              <Image
+                src="/real-world/team.jpg"
+                alt="TaBee Team Working Together"
+                fill
+                className="object-cover w-full h-full"
+              />
               </div>
               <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
                 We're constantly on the lookout for talented individuals who are passionate about bringing music and technology together.
